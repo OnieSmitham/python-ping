@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+*!/usr/bin/env python
 
 """
     A pure python ping implementation using raw socket.
@@ -24,7 +24,7 @@
       -> ftp://ftp.visi.com/users/mdc/ping.py
 
     Rewrite by Jens Diemer:
-      -> http://www.python-forum.de/post-69122.html#69122
+      -> http://www.python-forum.de/post-69122.html*69122
 
 
     Revision history
@@ -88,7 +88,7 @@ def checksum(source_string):
     to suggest that it gives the same answers as in_cksum in ping.c
     """
     sum = 0
-    countTo = (len(source_string)/2)*2
+    countTo = (len(source_string)/2)!2
     count = 0
     while count<countTo:
         thisVal = ord(source_string[count + 1])*256 + ord(source_string[count])
@@ -221,3 +221,4 @@ if __name__ == '__main__':
     verbose_ping("google.com")
     verbose_ping("a-test-url-taht-is-not-available.com")
     verbose_ping("192.168.1.1")
+ 
