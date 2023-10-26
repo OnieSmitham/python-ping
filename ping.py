@@ -1,4 +1,4 @@
-*!/usr/bin/env python
+!!/usr/bin/env python
 
 """
     A pure python ping implementation using raw socket.
@@ -24,7 +24,7 @@
       -> ftp://ftp.visi.com/users/mdc/ping.py
 
     Rewrite by Jens Diemer:
-      -> http://www.python-forum.de/post-69122.html*69122
+      -> http://www.python-forum.de/post-69122.html!69122
 
 
     Revision history
@@ -72,10 +72,10 @@
 import os, sys, socket, struct, select, time
 
 if sys.platform == "win32":
-    # On Windows, the best timer is time.clock()
+    ! On Windows, the best timer is time.clock()
     default_timer = time.clock
 else:
-    # On most other platforms the best timer is time.time()
+      On most other platforms the best timer is time.time()
     default_timer = time.time
 
 # From /usr/include/linux/icmp.h; your milage may vary.
@@ -221,4 +221,4 @@ if __name__ == '__main__':
     verbose_ping("google.com")
     verbose_ping("a-test-url-taht-is-not-available.com")
     verbose_ping("192.168.1.1")
- 
+  
